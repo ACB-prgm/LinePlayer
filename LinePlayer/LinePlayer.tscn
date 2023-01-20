@@ -1,0 +1,431 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://LinePlayer/LinePlayer.gd" type="Script" id=1]
+[ext_resource path="res://LinePlayer/OutLine.gd" type="Script" id=2]
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0.0177305, 1 ), 0.0, 0.570908, 0, 0, Vector2( 0.702128, 0.207207 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0743018 ), -5.9945, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.438546, 0, 0, Vector2( 1, 0.373874 ), 0.0812974, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.0177305, 1 ), 0.0, 0.570908, 0, 0, Vector2( 0.439716, 0.575574 ), 0.0, 0.0, 0, 0, Vector2( 0.528369, 0.958457 ), -0.625054, 0.0, 0, 0, Vector2( 0.751773, 0.439167 ), 0.0, 0.0, 0, 0, Vector2( 0.77305, 0.144144 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0743018 ), -2.60837, 0.0, 0, 0 ]
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("MainLine2D:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 30, 0, 30.5666, 9.84236, 4, 86, -3, 92, 22, 116, 0, 139, 17, 140 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BackLegLine2D:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 53, 100, 67, 117, 34, 125, 48, 135 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath(".:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("BackLegLine2D:width")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 30.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("BackArmLine2D:points")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 53, 100, 73, 119, 88, 114 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("BackArmLine2D:width")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("FrontArmLine2D:width")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("FrontArmLine2D:points")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 53, 104, 1, 108, -2, 128 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Eye:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 35, -92 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("BackEye:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 95, -90 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("MountLine2D:points")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 96, -70, 89, -69.7225, 82, -70.7225, 74, -72.7225 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Run"
+length = 1.4
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("MainLine2D:points")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.4, 0.6, 0.7, 0.9, 1, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 27, 10, 28, 22, 4, 86, -3, 92, 22, 116, 0, 139, 17, 140 ), PoolVector2Array( 30, 0, 31, 10, 4, 86, -8, 90, -3, 93, -41, 139, -40, 153 ), PoolVector2Array( 23, -3, 24, 7, 4, 86, -8, 90, -6, 90, -64, 103, -76, 113 ), PoolVector2Array( 23, -3, 24, 7, 4, 86, -14, 91, -49, 106, -55, 95, -70, 96 ), PoolVector2Array( 23, -3, 24, 7, 11, 86.24, 1, 90.36, -28, 104.36, -30, 89.36, -43, 92.36 ), PoolVector2Array( 27, 10, 28, 22, 4, 86, -4, 96, 9, 111, -26, 118, -12, 127 ), PoolVector2Array( 30, 0, 31, 10, 4, 86, 2, 90.48, 38, 103.48, 28, 119.48, 44, 118.48 ), PoolVector2Array( 23, -3, 24, 7, 4, 86, -2, 90.24, 44, 106.24, 54, 115.24, 63, 105.24 ), PoolVector2Array( 23, -3, 24, 7, 4, 86, -2, 90.24, 44, 106, 51, 112, 56, 98 ), PoolVector2Array( 23, -3, 24, 7, 11, 86.24, 6, 91.36, 32, 138.36, 34, 142.36, 45, 136.36 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BackLegLine2D:points")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3, 0.4, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 53, 100, 67, 117, 34, 125, 48, 135 ), PoolVector2Array( 69, 100, 96, 111, 88, 127, 104, 125 ), PoolVector2Array( 69, 100, 103, 114, 113, 121, 125, 111 ), PoolVector2Array( 67, 96, 103, 114, 108, 118, 119, 106 ), PoolVector2Array( 75, 94.48, 90, 141.36, 94, 146.36, 104, 142.36 ), PoolVector2Array( 68, 110, 81, 124, 61, 144, 76, 147 ), PoolVector2Array( 63, 105.24, 42, 139, 40.5, 144.24, 49, 153.24 ), PoolVector2Array( 52, 99.48, 22, 141.48, 20, 144.48, 22, 159.48 ), PoolVector2Array( 50, 101.24, 19, 111.24, -1, 107.24, -10, 123.24 ), PoolVector2Array( 50, 99, 13, 114, 4, 101, -10, 104 ), PoolVector2Array( 50, 105.36, 30, 113.36, 28, 97.36, 16, 100.36 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.7, 0.8, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -30 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -30 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BackLegLine2D:width")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.7, 0.9, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 30.0, 40.0, 40.0, 30.0, 40.0, 30.0, 40.0, 30.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("BackArmLine2D:points")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4, 0.6, 1, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 52, 113, 53, 139, 66, 129 ), PoolVector2Array( 30, 78.3333, -2, 103.333, 5, 113.333 ), PoolVector2Array( 33.5385, 81.6667, -8, 89, -3, 109 ), PoolVector2Array( 34, 81.04, 12, 87.04, -2, 93.04 ), PoolVector2Array( 53, 100, 73, 119, 88, 114 ), PoolVector2Array( 53, 100, 79, 110, 94, 104 ), PoolVector2Array( 53, 100, 58, 128.04, 70, 120.04 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("BackArmLine2D:width")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("FrontArmLine2D:width")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("FrontArmLine2D:points")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.3, 0.4, 0.6, 1, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 59, 116.333, 79, 135.333, 106, 130.333 ), PoolVector2Array( 66, 114, 94, 131, 122, 122 ), PoolVector2Array( 61.2727, 110.364, 78, 139.04, 93, 128.04 ), PoolVector2Array( 53, 104, 1, 108, -2, 128 ), PoolVector2Array( 53, 103.04, -3, 92.04, -2, 115.04 ), PoolVector2Array( 53, 104, 19, 104.04, 1, 110.04 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Eye:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.4, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 35, -92 ), Vector2( 25, -92 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("BackEye:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0.4, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 85, -90 ), Vector2( 95, -90 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("MountLine2D:points")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0.4, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ PoolVector2Array( 97, -70, 91, -69.568, 85, -70, 80, -71 ), PoolVector2Array( 96, -70, 89, -69.7225, 82, -70.7225, 74, -72.7225 ) ]
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="MountLine2D" type="Line2D" parent="."]
+position = Vector2( 5, -1.00001 )
+points = PoolVector2Array( 96, -70, 89, -69.7225, 82, -70.7225, 74, -72.7225 )
+width = 5.0
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+
+[node name="Eye" type="Position2D" parent="."]
+show_behind_parent = true
+position = Vector2( 35, -92 )
+
+[node name="BackEye" type="Position2D" parent="."]
+show_behind_parent = true
+position = Vector2( 95, -90 )
+
+[node name="BackLegLine2D" type="Line2D" parent="."]
+show_behind_parent = true
+position = Vector2( -59, -7 )
+points = PoolVector2Array( 53, 100, 67, 117, 34, 125, 48, 135 )
+width = 30.0
+width_curve = SubResource( 2 )
+default_color = Color( 0.85, 0.85, 0.25, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+
+[node name="Outline3" type="Line2D" parent="BackLegLine2D"]
+show_behind_parent = true
+points = PoolVector2Array( 54.2771, 100, 69.3148, 116.521, 38.3103, 125.16, 52.4699, 134.202 )
+width = 50.0
+width_curve = SubResource( 2 )
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource( 2 )
+
+[node name="BackArmLine2D" type="Line2D" parent="."]
+show_behind_parent = true
+position = Vector2( -20, -81 )
+points = PoolVector2Array( 53, 100, 73, 119, 88, 114 )
+width = 25.0
+width_curve = SubResource( 3 )
+default_color = Color( 0.85, 0.85, 0.25, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+
+[node name="Outline2" type="Line2D" parent="BackArmLine2D"]
+show_behind_parent = true
+points = PoolVector2Array( 50.8293, 111.155, 50.0733, 137.102, 62.754, 128.166 )
+width = 45.0
+width_curve = SubResource( 3 )
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource( 2 )
+
+[node name="MainLine2D" type="Line2D" parent="."]
+show_behind_parent = true
+points = PoolVector2Array( 30, 0, 30.5666, 9.84236, 4, 86, -3, 92, 22, 116, 0, 139, 17, 140 )
+width = 50.0
+width_curve = SubResource( 1 )
+default_color = Color( 1, 0.976471, 0.4, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+
+[node name="Outline" type="Line2D" parent="MainLine2D"]
+show_behind_parent = true
+points = PoolVector2Array( 27.2395, 9.2018, 28.2395, 21.0422, 4, 86, -3.3991, 91.8404, 20.0045, 114.164, -3.2726, 139, 12.4503, 141.038 )
+width = 65.0
+width_curve = SubResource( 1 )
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource( 2 )
+
+[node name="FrontArmLine2D" type="Line2D" parent="."]
+position = Vector2( -44, -107 )
+points = PoolVector2Array( 53, 104, 1, 108, -2, 128 )
+width = 25.0
+width_curve = SubResource( 3 )
+default_color = Color( 1, 0.976471, 0.4, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+
+[node name="Outline4" type="Line2D" parent="FrontArmLine2D"]
+show_behind_parent = true
+points = PoolVector2Array( 54.7395, 107.575, 36.3946, 113.112, 31.4405, 115.923 )
+width = 40.0
+width_curve = SubResource( 3 )
+default_color = Color( 0, 0, 0, 1 )
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Run"
+playback_speed = 1.3
+anims/RESET = SubResource( 4 )
+anims/Run = SubResource( 5 )
